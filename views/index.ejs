@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/cart" class="cart-link" style="float: right;">🛒 Giỏ hàng</a>
+        </header>
+        <h1>Danh sách sản phẩm</h1>
+        <ul class="product-list">
+            <% products.forEach(product => { %>
+                <li class="product-item">
+                    <img src="<%= product.image %>" alt="<%= product.name %>" width="150">
+                    <h3><%= product.name %></h3>
+                    <p class="price">$<%= product.price %></p>
+                    <a href="/products/<%= product._id %>">Xem chi tiết</a>
+                    <a href="/cart/add/<%= product._id %>">Thêm vào giỏ hàng</a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

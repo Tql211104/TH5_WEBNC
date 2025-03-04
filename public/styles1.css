@@ -1,0 +1,119 @@
+/* styles1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic; /* In nghiêng cho thông báo giỏ hàng trống */
+    color: #777;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 80%; /* Giảm chiều rộng danh sách giỏ hàng */
+    max-width: 800px; /* Đặt chiều rộng tối đa */
+}
+
+.cart-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex; /* Sử dụng flexbox cho các mục giỏ hàng */
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-info {
+    flex-grow: 1; /* Cho phép phần thông tin sản phẩm chiếm không gian còn lại */
+}
+
+.cart-info h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.cart-info p {
+    margin: 0;
+    color: #555;
+    text-align: left; /* Căn trái giá và số lượng trong thông tin sản phẩm */
+    font-style: normal; /* Loại bỏ in nghiêng nếu có từ phần <p> giỏ hàng trống */
+}
+
+.cart-info a {
+    color: #e74c3c; /* Màu đỏ cho liên kết Xóa */
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.cart-info a:hover {
+    text-decoration: underline; /* Gạch chân khi hover vào liên kết Xóa */
+}
+
+h3 { /* Style cho "Tổng tiền" */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.4em;
+    color: #27ae60; /* Màu xanh lá cây cho tổng tiền */
+}
+
+a[href="/products"] { /* Style cho nút "Tiếp tục mua hàng" */
+    display: block;
+    text-align: center;
+    background-color: #3498db; /* Màu xanh dương */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+a[href="/products"]:hover {
+    background-color: #2980b9; /* Màu xanh dương đậm hơn khi hover */
+}

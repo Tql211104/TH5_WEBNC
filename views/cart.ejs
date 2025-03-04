@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./styles1.css">
+</head>
+<body>
+    <header>
+        <a href="/products">🏠 Trang chủ</a>
+    </header>
+    <h1>Giỏ hàng</h1>
+    
+    <% if (cart.length === 0) { %>
+        <p>Giỏ hàng của bạn đang trống.</p>
+    <% } else { %>
+        <ul>
+            <% let total = 0; cart.forEach(item => { total += item.product.price * item.quantity; %>
+                <li class="cart-item">
+                    <img src="<%= item.product.image %>" alt="<%= item.product.name %>" width="100">
+                    <div class="cart-info">
+                        <h3><%= item.product.name %></h3>
+                        <p>Giá: $<%= item.product.price %> | Số lượng: <%= item.quantity %></p>
+                        <a href="/cart/remove/<%= item.product._id %>">Xóa</a>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+        <h3>Tổng tiền: $<%= total %></h3>
+    <% } %>
+    
+    <a href="/products">Tiếp tục mua hàng</a>
+</body>
+</html>

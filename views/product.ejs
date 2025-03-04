@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= product.name %></title>
+    <link rel="stylesheet" href="/styles2.css">
+
+</head>
+<body>
+    <header>
+        <a href="/products">🏠 Trang chủ</a>
+    </header>
+    <h1><%= product.name %></h1>
+    <img src="<%= product.image %>" width="200">
+    <p><%= product.description %></p>
+    <h3>Giá: $<%= product.price %></h3>
+</body>
+</html>
