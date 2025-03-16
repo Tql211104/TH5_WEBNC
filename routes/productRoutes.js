@@ -16,12 +16,6 @@ router.get('/:id', async (req, res) => {
 });
 
 // API Thêm sản phẩm (Dùng Postman)
-// router.post('/add', async (req, res) => {
-//     const { name, price, image, description } = req.body;
-//     const newProduct = new Product({ name, price, image, description });
-//     await newProduct.save();
-//     res.redirect('/products');
-// });
 router.post('/add', async (req, res) => {
     try {
         const { name, price, image, description } = req.body;

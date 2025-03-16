@@ -1,4 +1,4 @@
-/* styles1.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -81,7 +81,7 @@ ul {
     margin: 0;
     color: #555;
     text-align: left; /* Căn trái giá và số lượng trong thông tin sản phẩm */
-    font-style: normal; /* Loại bỏ in nghiêng nếu có từ phần <p> giỏ hàng trống */
+    font-style: normal; 
 }
 
 .cart-info a {
@@ -92,21 +92,20 @@ ul {
 }
 
 .cart-info a:hover {
-    text-decoration: underline; /* Gạch chân khi hover vào liên kết Xóa */
+    text-decoration: underline; 
 }
 
 h3 { /* Style cho "Tổng tiền" */
     text-align: center;
     margin-top: 20px;
     font-size: 1.4em;
-    color: #27ae60; /* Màu xanh lá cây cho tổng tiền */
+    color: #27ae60; 
 }
 
-a[href="/products"] { /* Style cho nút "Tiếp tục mua hàng" */
+a[href="/products"] { 
     display: block;
     text-align: center;
-    background-color: #3498db; /* Màu xanh dương */
-    color: #fff;
+    background-color: #3498db; 
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
